@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-route
 import TeddyDay from "./components/TeddyDay";
 import PromiseDay from "./components/PromiseDay";
 import Navbar from "./components/Navbar";
-// import HugDay from "./components/HugDay";
+import HugDay from "./components/HugDay";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/teddy" element={<TeddyDay />} />
         <Route path="/promise" element={<PromiseDay />} />
-        {/* <Route path="/hug" element={<HugDay />} /> */}
+        <Route path="/hug" element={<HugDay />} />
       </Routes>
     </Router>
   );
@@ -34,12 +34,12 @@ const HomePage = () => {
       date: "Feb 11",
       icon: "💕",
     },
-    // {
-    //   id: "hug",
-    //   day: "Hug Day",
-    //   date: "Feb 12",
-    //   icon: "🤗",
-    // },
+    {
+      id: "hug",
+      day: "Hug Day",
+      date: "Feb 12",
+      icon: "🤗",
+    },
   ];
 
   return (
