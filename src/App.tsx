@@ -26,10 +26,17 @@ const HomePage = () => {
 
   const valentineDays = [
     {
-      id: "teddy",
-      day: "Teddy Day",
-      date: "Feb 10",
-      icon: "🧸",
+      id: "kiss",
+      day: "Kiss Day",
+      date: "Feb 13",
+      icon: "💋",
+      isNew: true,
+    },
+    {
+      id: "hug",
+      day: "Hug Day",
+      date: "Feb 12",
+      icon: "🤗",
       isNew: false,
     },
     {
@@ -40,18 +47,11 @@ const HomePage = () => {
       isNew: false,
     },
     {
-      id: "hug",
-      day: "Hug Day",
-      date: "Feb 12",
-      icon: "🤗",
+      id: "teddy",
+      day: "Teddy Day",
+      date: "Feb 10",
+      icon: "🧸",
       isNew: false,
-    },
-    {
-      id: "kiss",
-      day: "Kiss Day",
-      date: "Feb 13",
-      icon: "💋",
-      isNew: true,
     },
   ];
 
