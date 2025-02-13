@@ -4,6 +4,7 @@ import PromiseDay from "./components/PromiseDay";
 import Navbar from "./components/Navbar";
 import HugDay from "./components/HugDay";
 import { Sparkles } from 'lucide-react';
+import KissDay from "./components/KissDay";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/teddy" element={<TeddyDay />} />
         <Route path="/promise" element={<PromiseDay />} />
         <Route path="/hug" element={<HugDay />} />
+        <Route path="/kiss" element={<KissDay />} />
       </Routes>
     </Router>
   );
@@ -42,6 +44,13 @@ const HomePage = () => {
       day: "Hug Day",
       date: "Feb 12",
       icon: "🤗",
+      isNew: false,
+    },
+    {
+      id: "kiss",
+      day: "Kiss Day",
+      date: "Feb 13",
+      icon: "💋",
       isNew: true,
     },
   ];
