@@ -61,7 +61,7 @@
 // };
 
 // export default ValentineDay;
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Heart, X, ArrowRight, ArrowLeft, ArrowUp, ArrowDown } from 'lucide-react';
 
 type Cell = {
