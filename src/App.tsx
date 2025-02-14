@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import HugDay from "./components/HugDay";
 import { Sparkles } from 'lucide-react';
 import KissDay from "./components/KissDay";
+import ValentineDay from "./components/ValentineDay";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/promise" element={<PromiseDay />} />
         <Route path="/hug" element={<HugDay />} />
         <Route path="/kiss" element={<KissDay />} />
+        <Route path="/valentine" element={<ValentineDay />} />
       </Routes>
     </Router>
   );
@@ -26,17 +28,10 @@ const HomePage = () => {
 
   const valentineDays = [
     {
-      id: "kiss",
-      day: "Kiss Day",
-      date: "Feb 13",
-      icon: "💋",
-      isNew: true,
-    },
-    {
-      id: "hug",
-      day: "Hug Day",
-      date: "Feb 12",
-      icon: "🤗",
+      id: "teddy",
+      day: "Teddy Day",
+      date: "Feb 10",
+      icon: "🧸",
       isNew: false,
     },
     {
@@ -47,11 +42,25 @@ const HomePage = () => {
       isNew: false,
     },
     {
-      id: "teddy",
-      day: "Teddy Day",
-      date: "Feb 10",
-      icon: "🧸",
+      id: "hug",
+      day: "Hug Day",
+      date: "Feb 12",
+      icon: "🤗",
       isNew: false,
+    },
+    {
+      id: "kiss",
+      day: "Kiss Day",
+      date: "Feb 13",
+      icon: "💋",
+      isNew: false,
+    },
+    {
+      id: "valentine",
+      day: "Valentine Day",
+      date: "Feb 14",
+      icon: "💝",
+      isNew: true,
     },
   ];
 
